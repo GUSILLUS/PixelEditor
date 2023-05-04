@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.f6e42308.css",
-    "main.js": "/react-gh-pages/static/js/main.6505b7f6.js",
-    "static/media/pattern-randomized.svg": "/react-gh-pages/static/media/pattern-randomized.c90c81bc1d1e72b01074.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.f6e42308.css.map": "/react-gh-pages/static/css/main.f6e42308.css.map",
-    "main.6505b7f6.js.map": "/react-gh-pages/static/js/main.6505b7f6.js.map"
+    "main.css": "/PixelEditor/static/css/main.00db3886.css",
+    "main.js": "/PixelEditor/static/js/main.6505b7f6.js",
+    "static/media/pattern-randomized.svg": "/PixelEditor/static/media/pattern-randomized.c90c81bc1d1e72b01074.svg",
+    "index.html": "/PixelEditor/index.html",
+    "main.00db3886.css.map": "/PixelEditor/static/css/main.00db3886.css.map",
+    "main.6505b7f6.js.map": "/PixelEditor/static/js/main.6505b7f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6e42308.css",
+    "static/css/main.00db3886.css",
     "static/js/main.6505b7f6.js"
   ]
 }
