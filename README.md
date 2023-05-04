@@ -2,6 +2,8 @@
 
 Pixel Editor is a pixel art editor that allows you to choose the width and height of your canvas and save your artwork in PNG format. This project was developed using React and utilizes the "react-color", "react-component-export-image", and "node-sass" libraries.
 
+[Demo Link](https://gusillus.github.io/PixelEditor/)
+
 ## Features
 
 - Choose the width and height of your canvas
@@ -31,4 +33,3 @@ Pixel Editor was developed by [Ivan Ivakhnenko](https://github.com/GUSILLUS). It
 - [react-component-export-image](https://github.com/jaydenlin/react-component-export-image)
 - [node-sass](https://github.com/sass/node-sass)
 
-# PixelEditor
