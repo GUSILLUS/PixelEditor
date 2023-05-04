@@ -1,0 +1,16 @@
+.pixel {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .pixel {
+    width: 1rem;
+    height: 1rem;
+  }
+}

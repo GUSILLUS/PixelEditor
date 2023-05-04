@@ -1,0 +1,76 @@
+@import "properties.scss";
+
+.editor {
+  background-color: $black;
+  border: 1px solid $red;
+  border-radius: 0.75rem;
+  padding: 1rem 4rem 2rem 4rem;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min-content;
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }  
+  }
+
+  &__options {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+
+    &_group {
+      display: flex;
+      flex-direction: column;
+     
+      &__span {
+      font-size: 1rem;
+      }
+
+      &_panelInput {
+        font-family: 'Press Start 2P', cursive;
+        height: 5rem;
+        width: 5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        border: 1px solid $grey;
+        border-radius: 0.25rem;
+        margin: 0 1rem 0.5rem 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:focus {
+          outline: none !important;
+          border-color: $red;
+          box-shadow: 0 0 0.5rem $grey;
+        }
+
+        @media screen and (max-width: 600px) {
+          height: 3rem;
+          width: 3rem;
+          font-size: 1.4rem;
+        }  
+      }
+    }
+  }
+
+  .compact-picker {
+    background-color: $white !important;
+  }
+}

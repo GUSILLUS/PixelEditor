@@ -1,0 +1,32 @@
+@import "properties.scss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./Images/pattern-randomized.svg");
+  background-attachment: fixed;
+  background-size: cover;;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  min-width: fit-content;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
