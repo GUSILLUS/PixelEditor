@@ -17,9 +17,11 @@ export const Editor = () => {
     setHideOptions(!hideOptions);
     setHideDrawingPanel(!hideDrawingPanel);
 
-    buttonText === 'start drawing'
-      ? setButtonText('reset')
-      : setButtonText('start drawing');
+    setButtonText((
+      buttonText === 'start drawing'
+      ? 'reset'
+      : 'start drawing'
+    ))
   }
 
   function changeColor(color) {

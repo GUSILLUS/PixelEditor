@@ -9,17 +9,17 @@ export const Pixel = ({
   const [oldColor, setOldColor] = useState(pixelColor);
   const [canChangeColor, setCanChangeColor] = useState(true);
 
-  function applyColor() {
+  const applyColor = () => {
     setPixelColor(selectedColor);
     setCanChangeColor(false);
   };
 
-  function changeColorOnHover() {
+  const changeColorOnHover = () => {
     setOldColor(pixelColor);
     setPixelColor(selectedColor);
   };
 
-  function resetColor() {
+  const resetColor = () => {
     if (canChangeColor) {
       setPixelColor(oldColor)
     }
@@ -35,6 +35,6 @@ export const Pixel = ({
       onMouseEnter={changeColorOnHover}
       onMouseLeave={resetColor}
       style={{ backgroundColor: pixelColor }}
-    ></div>
+    />
   );
 };

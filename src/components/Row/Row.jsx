@@ -9,10 +9,14 @@ export const Row = ({
   const pixels = [];
 
   for (let i = 0; i < width; i++) {
-    pixels.push(<Pixel key={i} selectedColor={selectedColor} />)
+    pixels.push(i + Date.now())
   }
 
+  console.log(pixels)
+
   return (
-    <div className="row">{pixels}</div>
+    <div className="row">{pixels.map(key => (
+    <Pixel key={key} selectedColor={selectedColor} />
+    ))}</div>
   );
 };

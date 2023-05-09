@@ -13,13 +13,15 @@ export const DrawingPanel = ({
   const rows = [];
 
   for (let i = 0; i < height; i++) {
-    rows.push(<Row key={i} width={width} selectedColor={selectedColor} />)
+    rows.push(i + Date.now());
   }
 
   return (
     <div id="drawingPanel">
       <div id="pixels" ref={panelRef}>
-        {rows}
+        {rows.map(key => (
+        <Row key={key} width={width} selectedColor={selectedColor} />
+        ))}
       </div>
 
       <button 
