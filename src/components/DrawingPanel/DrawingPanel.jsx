@@ -13,14 +13,14 @@ export const DrawingPanel = ({
   const rows = [];
 
   for (let i = 0; i < height; i++) {
-    rows.push(i + Date.now());
+    rows.push(`${i}-rowId`);
   }
 
   return (
     <div id="drawingPanel">
       <div id="pixels" ref={panelRef}>
-        {rows.map(key => (
-        <Row key={key} width={width} selectedColor={selectedColor} />
+        {rows.map(row => (
+          <Row key={row} width={width} selectedColor={selectedColor} />
         ))}
       </div>
 

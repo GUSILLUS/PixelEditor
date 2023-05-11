@@ -6,17 +6,15 @@ export const Row = ({
   width,
   selectedColor,
 }) => {
-  const pixels = [];
+  const pixels = []
 
   for (let i = 0; i < width; i++) {
-    pixels.push(i + Date.now())
+    pixels.push(`${i}-pixelId`);
   }
 
-  console.log(pixels)
-
   return (
-    <div className="row">{pixels.map(key => (
-    <Pixel key={key} selectedColor={selectedColor} />
+    <div className="row">{pixels.map(pixel => (
+      <Pixel key={pixel} selectedColor={selectedColor} />
     ))}</div>
   );
 };
